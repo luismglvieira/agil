@@ -1,3 +1,29 @@
+/* Body atributes */
+
+div {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: auto;
+}
+
+html {
+    color: black;
+    height: 100%;
+    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+}
+
+/* Font */
+
+.nav-menu a,
+html  {
+    font-size: 12px;
+}
+
 /* Color attribution */
 
 .header,
@@ -27,12 +53,14 @@
     grid-area: header; 
     text-align: center;
     position: sticky; 
+    position: -webkit-sticky;
     top: 0;
 }
 
 .header-separator { 
     grid-area: header-separator; 
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
 }
 
@@ -41,6 +69,7 @@
 .nav-menu { 
     grid-area: nav-menu;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     padding: 0px;
     margin: 0px;
@@ -82,9 +111,17 @@
 .left-column { 
     grid-area: left-column; 
     padding: 20px 20px;
+    /* position: sticky;
+    top: 80px; */
+    /* height: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 80px; */
 }
+
 .article { 
     grid-area: article; 
+    align-items: baseline;
 }
 
 .article img {
@@ -99,11 +136,13 @@
 .separator1 { 
     grid-area: separator1; 
     position: sticky;
+    position: -webkit-sticky;
 }
 
 .separator2 { 
     grid-area: separator2; 
     position: sticky;
+    position: -webkit-sticky;
 }
 
 /* Footer atributes */
@@ -112,19 +151,22 @@
     grid-area: footer-address; 
     text-align: center;
     position:sticky; 
+    position: -webkit-sticky;
     bottom:0;
 }
 
 .footer-separator { 
     grid-area: footer-separator; 
-    position:sticky; 
+    position: sticky; 
+    position: -webkit-sticky;
     bottom:0;
 }
 
 .footer-contacts { 
     grid-area: footer-contacts; 
     text-align: center;
-    position:sticky; 
+    position: sticky; 
+    position: -webkit-sticky;
     bottom:0;
 }
 
@@ -158,28 +200,3 @@
     bottom: 40px;
 }
 
-/* Body atributes */
-
-div {
-    height: 100%;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    height: 100%;
-}
-
-html {
-    color: black;
-    height: 100%;
-    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-}
-
-/* Font */
-
-.nav-menu a,
-html  {
-    font-size: 12px;
-}

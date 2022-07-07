@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="main-style.css" rel="stylesheet">
+    <title>LUÍS PORTFOLIO</title>
+    <!-- font from https://fonts.google.com/specimen/Open+Sans#standard-styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@557&display=swap" rel="stylesheet">
+    <!-- author and meta tags -->
+    <meta name="author" content="Luís Miguel Vieira">
+    <meta name="description" content="Texto descritivo sobre a Associação. Usar keywords para o google AQUI.">
+    <!-- browser icon -->    
+    <link rel="icon" href="images/agil-icon.png" type="image/x-icon">
+    <script type="text/javascript" src="main-functions.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="grid-container">
+        <div class="header-1"></div>
+        <div class="header-main">
+            <p id="my-name">LUÍS VIEIRA</p>
+            <p id="my-rank">ENGENHEIRO MECÂNICO</p>
+        </div>
+        <div class="header-2"></div>
+
+        <div class="sep1-1"></div>
+        <div class="sep1-main"></div>
+        <div class="sep1-2"></div>
+
+        <div class="nav-1"></div>
+        <div class="nav-main">
+            <span class="menu-link"><a href="index.html">SOBRE</a></span>
+            <span class="menu-link"><a href="formacao.html" id="menu-link-active">FORMAÇÃO</a></span>
+            <span class="menu-link"><a href="experiencia.html">EXPERIÊNCIA</a></span>
+            <span class="menu-link"><a href="contacto.html">CONTACTO</a></span>
+        </div>  
+        <div class="nav-2"></div>
+
+        <div class="sep2-1"></div>
+        <div class="sep2-main"></div>
+        <div class="sep2-2"></div>
+
+        <div class="art-1">
+            <ul>
+                <a href="#"><li id="nav-passatempos" class="nav-side" onclick=sobre_passatempos()><span class="sidebar">LICENCIATURA</span></li></a>
+                <a href="#"><li id="nav-percurso" class="nav-side" onclick=sobre_percurso()><span class="sidebar">MESTRADO</span></li></a>
+                <a href="#"><li id="nav-motivacao" class="nav-side" onclick=sobre_motivacao()><span class="sidebar">DISSERTAÇÃO</span></li></a>
+                <a href="#"><li id="nav-apresentacao" class="nav-active" onclick=sobre_apresentacao()><span class="sidebar">PYTHON & OPENCV</span></li></a>
+            </ul>
+        </div>
+        <div class="art-main">
+            <div id = "passatempos">
+                <!-- Licenciatura -->
+                <p>O ponto principal da minha formação é a frequência e conclusão do Mestrado Integrado em Engenharia Mecânica (MIEM). 
+                Sinto alguma necessidade de fazer um apanhado do que aprendi uma vez que existe uma opinião errada das qualificações 
+                de um Engenheiro Mecânico.</p>
+                <p class="article-quote">No MIEM existe uma forte componente em programação e eletrónica</p>
+                <p>que nos dá uma boa base para futuramente assimilar conhecimentos nestas áreas a nível profissional.</p>
+                
+                <p>Os 3 primeiros anos do Mestrado Integrado em Engenharia Mecânica, a chamada licenciatura, são muito abrangentes e caracterizam-se 
+                por exercícios teóricos mais curtos. Por isso, destaco os tópicos que gostaria de desenvolver a nível profissional, fazendo também 
+                um resumo do que foi feito nas respetivas unidades curriculares.</p>
+                
+                <p class="article-topic">CAD Design 
+                    <sup><a href="https://www.ua.pt/pt/uc/11010" target="_blank" class="article-topic">[1]</a></sup>
+                    <sup><a href="https://www.ua.pt/pt/uc/15507" target="_blank" class="article-topic">[2]</a></sup></p> 
+                    <p>Aprendizagem do software CATIA desde raíz</p>
+                    <p>Estudo e aplicação das regras de toleranciamento dimensional e geométrico a nível de software CAD</p>
+                    <p>Criação de réplicas de objetos reais incluindo assembly </p>
+                </ul>
+                <p class="article-topic">Automação Industrial
+                    <sup><a href="https://www.ua.pt/pt/uc/2233" target="_blank" class="article-topic">[3]</a></sup>
+                    <sup><a href="https://www.ua.pt/pt/uc/9366" target="_blank" class="article-topic">[4]</a></sup></p> 
+                    <p>Conceitos básicos de autómatos industriais</p> 
+                    <p>Programação de PLC com LADDER</p> 
+                    <p>Dimensionamento de quadros elétricos</p> 
+
+
+
+
+            </div>
+
+            <div id="percurso">
+                <!-- Mestrado -->
+                <p>O papel do quarto e quinto anos do MIEM é aprofundar os conhecimentos a nível prático e preparar os alunos a pensar em 
+                projetos de longa duração, ao contrário dos pequenos exercícios que eram característicos das unidades curriculares da licenciatura.</p>
+
+                <p class="article-topic">Informática Industrial 
+                    <sup><a href="https://www.ua.pt/pt/uc/11131" target="_blank" class="article-topic">[5]</a></sup></p>
+                    <p>Programação em Visual Studio</p>
+                    <p>Desenvolvimento de software para supervisão de instalação fabril</p>
+                    <p>Bases de dados SQL/MySQL; Linguagem HTML e PHP</p>
+
+                <p class="article-topic">Visão Industrial
+                    <sup><a href="https://www.ua.pt/pt/uc/2853" target="_blank" class="article-topic">[6]</a></sup></p>
+                    <p>Programação em Matlab, linguagem C e Sherlock
+                    <p>Filtros e operadores de baixo nível
+                    <p>Operadores morfológicos
+                    <p>Deteção e descrição de regiões e contornos
+                    <p>Cor e operadores matriciais
+                    <p>Gestão e aquisição de dados para comparação dos descritores de modo a identificar os objetos
+
+                <p class="article-topic">Servomecanismos
+                    <sup><a href="https://www.ua.pt/pt/uc/11355" target="_blank" class="article-topic">[7]</a></sup></p>
+                    <p>Estabilidade e conceitos de feedback (controlo em malha aberta e malha fechada)</p>
+                    <p>Análise de sinais no domínio do tempo e no domínio da frequência</p>
+                    <p>Experiências laboratoriais com Matlab e a biblioteca Simulink</p>
+            </div>
+            
+            <div id="motivacao">
+                <!-- Dissertação -->
+                
+                <p class="article-topic">Síntese digital-analógica na geração de sinal
+                    <sup><a href="http://hdl.handle.net/10773/31343" target="_blank" class="article-topic">[8]</a></sup></p>
+                <p>A atividade de investigação na área da acústica e ruído exige a disponibilidade de diversa instrumentação, entre a qual uma unidade de síntese 
+                analógica/digital capaz de gerar ondas complexas na gama audível do espectro. O desenvolvimento e a disponibilidade da tecnologia no mercado 
+                de consumo tem levado ao aparecimento de soluções muito económicas para construir sistemas de aquisição e geração de sinal.</p>
+                <p>Neste trabalho de projeto foi desenvolvido e testado um gerador de sinal destinado a áudio, recorrendo a técnicas de sintese digital e 
+                analógica, tendo por base soluções de baixo custo e facilmente acessíveis no mercado de consumo. Para isto foi feito um estudo extensivo 
+                acerca das características presentes na instrumentação existente de modo a construir um protótipo funcional com todo o desenvolvimento de 
+                produto a este associado, tendo especial atenção aos requisitos de mercado.</p>
+                <p>No final, a captura de resultados deverá servir para efetuar uma análise qualitativa no contexto de 
+                instrumentação eletrónica destinada a áudio.</p>
+                <p class="article-topic">Projeto de hardware</p>
+                <p>A fase inicial do projeto onde foi feito o Estado de Arte dos sintetizadores. Partindo daqui foi necessário investir num estudo intensivo de conceitos de eletrónica
+                de modo a entender os fenómenos por trás da geração de ondas com hardware analógico, o seu controlo e processamento. Desta parte resultou um gerador de onda 
+                quadrada capaz de responder a uma diferença de potencial para controlar a sua frequência, um chamado Voltage Controlled Oscillator <sup><a 
+                href="https://en.wikipedia.org/wiki/Voltage-controlled_oscillator" target="_blank" class="text-topic">[9]</a></sup> .</p>
+                    <p>Amplificadores operacionais
+                    <p>Semicondutores</p>
+                    <p>Princípios de filtragem e dimensionamento de filtros</p>
+                    <p>Conversão analógica/digital</p>
+                <p class="article-topic">Teoria e processamento de sinal</p>
+                <p>Era necessário transformar esse sinal em ondas mais complexas cujo formato de onda pudesse ser manipulado pelo utilizador do equipamento. O passo seguinte 
+                foi estudar de que forma podíamos obter outros tipos de onda tendo como base a frequência e fase da onda original. Assim, a frequência fundamental de todas as 
+                ondas do equipamento estará sincronizada, apenas mudando os harmónicos. No fim, o utilizador consegue alterar a forma da onda como na tecnologia wavetable. <sup><a 
+                href="https://en.wikipedia.org/wiki/Wavetable_synthesis" target="_blank" class="text-topic">[10]</a></sup></p> 
+                    <p>Geração de sinal analógico (onda quadrada, triangular, dente de serra)</p>
+                    <p>Controlo de frequência em feedback loop</p>
+                    <p>Projeto de PCB com o software EasyEda</p>
+                <p class="article-topic">Programação de sistemas embebidos</p>
+                <p>O Arduino foi sugerido pelos professores do Mestrado como uma plataforma apropriada para o próximo passo: a definição das frequências de oscilação. Era necesário que estas frequências
+                estivessem quantizadas em valores muito específicos e reduzir a influência de fatores externos na mesma (humidade, temperatura...). Por isso, um sistema que fizesse o controlo digital da
+                frequência era desejável, particularmente num sistema em feedback.</p>
+                <p> Aproveitei para adicionar mais funcionalidades ao produto. O Arduino faz a aquisição de valores em potenciómetros e botões para desta forma definir que algoritmo interno operar. De um modo
+                resumido, é possível criar sequências de frequências e escolher os formatos de onda das mesmas em tempo real. Como o Arduino tem entradas e saídas limitadas, foi necessário utilizar
+                multiplexers e demultiplexers de modo a receber mais inputs e ter mais outputs. O Arduino serve como meio de comunicação entre o utilizador e o hardware.</p>
+                    <p>Programação em Arduino (Linguagem C e C++)</p>
+                    <p>Criação de uma interface física para alterar variáveis do código</p>
+                    <p>Obtenção de dados do utilizador para manipulação do comportamento dos circuitos</p>
+
+            </div>
+
+            <div id="apresentacao">
+                <!-- Pós-estudos -->
+                <p>A minha decisão de estudar Python foi por ser uma linguagem utilizada em Visão Artificial com a biblioteca OpenCV. Tendo adorado
+                a minha experiência em Visão com Matlab durante o Mestrado, faria todo o sentido procurar essa área numa vertente profissional, mas o Matlab
+                infelizmente não tem muita procura a nível profissional.</p>
+                
+                <p>Felizmente existe esta alternativa open source que por sinal é extremamente abrangente a nível de aplicações (bases de dados, inteligência artificial, 
+                videojogos, outras aplicações simples...). E é também reconfortante ser uma linguagem tão leve e divertida de utilizar, onde tudo tem lógica a nível síntaxe.</p>
+
+                <p>Após ver alguns vídeos no YouTube fiquei capaz de fazer programas simples e de avançar alguns níveis no website Codewars <sup><a href="https://www.codewars.com/users/luismglvieira" target="_blank" class="text-topic">[12]</a></sup>, o 
+                que foi logo um início de experiência muito motivador. No entanto, tinha noção de que deveria aprender boas práticas de programação. Por isso, decidi comprar alguns 
+                cursos da Udemy de modo a ter uma formação um pouco mais cuidada e estruturada.</p>
+
+                <p class="article-topic">The Python Mega Course: Build 10 Real World Applications
+                    <sup><a href="https://www.udemy.com/course/the-python-mega-course/" target="_blank" class="article-topic">[13]</a></sup></p>
+                    <p>Bibliotecas: Numpy, Matplotlib, Pandas, OpenCV, Tkinter</p>
+                    <p>Data Types, Basic Operators, Accessing items, Conditionals, Loops</p>
+                    <p>Functions, Modules, Methods</p>
+                    <p>CSV, JSON, Excel</p>
+                    <p>SQLite, Data visualization, Interacting with databases</p>
+                    <p>Graphical User Interfaces</p>
+                    <p>Web scrapping introduction</p>
+
+                <p class="article-topic">Advanced Python: Python OOP with 10 Real-World Programs
+                    <sup><a href="https://www.udemy.com/course/the-python-pro-course/" target="_blank" class="article-topic">[14]</a></sup></p>
+                    <p>Class, methods, class methods, static methods, class variables</p>
+                    <p>App planning phase</p>
+                    <p>Graphical User Interfaces</p>
+                    <p>Working with Git</p>
+                <p class="article-topic">Python for Computer Vision with OpenCV and Deep Learning
+                    <sup><a href="https://www.udemy.com/course/python-for-computer-vision-with-opencv-and-deep-learning/" target="_blank" class="article-topic">[15]</a></sup></p>
+
+                <p>Image and video processing</p>
+                <p>Object detection and tracking</p>
+                <p>Thresholding, Smoothing, Gradients, Histograms</p>
+                <p>Morphological operators</p>
+                <p>Edge detection</p>
+
+            </div>
+
+        </div>
+        <div class="art-2">
+            <div id = "apresentacao-imgs">
+                
+            </div>
+
+            <div id = "percurso-imgs"><img 
+                src="images/mestrado4.png" width="100%"><img 
+                src="images/mestrado5.png" width="100%"><img 
+                src="images/mestrado6.png" width="100%"><img 
+                src="images/mestrado7.png" width="100%">
+            </div>        
+            
+            <div id = "motivacao-imgs"><img 
+                src="images/tese1.jpg" width="100%"><img 
+                src="images/tese2.jpg" width="100%"><img 
+                src="images/tese4.jpg" width="100%"><img 
+                src="images/tese5.jpg" width="100%">
+            </div>    
+
+            <div id = "objetivos-imgs">
+                
+            </div>    
+
+            <div id = "passatempos-imgs">
+                
+            </div>    
+            
+        </div>
+
+        <div class="sep3-1"></div>
+        <div class="sep3-main"></div>
+        <div class="sep3-2"></div>
+
+        <div class="footer-1"></div>
+        <div class="footer-main">luismglvieira@outlook.com</div>
+        <div class="footer-2"></div>
+    </div>
+
+
+    
+
+</body>
+
+
+
+</html>

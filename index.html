@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="main-style.css" rel="stylesheet">
+    <title>LUÍS PORTFOLIO</title>
+    <!-- font from https://fonts.google.com/specimen/Open+Sans#standard-styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@557&display=swap" rel="stylesheet">
+    <!-- author and meta tags -->
+    <meta name="author" content="Luís Miguel Vieira">
+    <meta name="description" content="Texto descritivo sobre a Associação. Usar keywords para o google AQUI.">
+    <!-- browser icon -->    
+    <link rel="icon" href="images/agil-icon.png" type="image/x-icon">
+    <script type="text/javascript" src="main-functions.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="grid-container">
+        <div class="header-1"></div>
+        <div class="header-main">
+            <p id="my-name">LUÍS VIEIRA</p>
+            <p id="my-rank">ENGENHEIRO MECÂNICO</p>
+        </div>
+        <div class="header-2"></div>
+
+        <div class="sep1-1"></div>
+        <div class="sep1-main"></div>
+        <div class="sep1-2"></div>
+
+        <div class="nav-1"></div>
+        <div class="nav-main">
+            <span class="menu-link"><a href="index.html" id="menu-link-active">SOBRE</a></span>
+            <span class="menu-link"><a href="formacao.html">FORMAÇÃO</a></span>
+            <span class="menu-link"><a href="experiencia.html">EXPERIÊNCIA</a></span>
+            <span class="menu-link"><a href="contacto.html">CONTACTO</a></span>
+        </div>  
+        <div class="nav-2"></div>
+
+        <div class="sep2-1"></div>
+        <div class="sep2-main"></div>
+        <div class="sep2-2"></div>
+
+        <div class="art-1">
+            <ul>
+                <a href="#"><li id="nav-apresentacao" class="nav-active" onclick=sobre_apresentacao()><span class="sidebar">APRESENTAÇÃO</span></li></a>
+                <a href="#"><li id="nav-percurso" class="nav-side" onclick=sobre_percurso()><span class="sidebar">PERCURSO</span></li></a>
+                <a href="#"><li id="nav-motivacao" class="nav-side" onclick=sobre_motivacao()><span class="sidebar">MOTIVAÇÃO</span></li></a>
+                <!-- <a href="#"><li id="nav-objetivos" class="nav-side" onclick=sobre_objetivos()><span class="sidebar">OBJETIVOS</span></li></a> -->
+                <a href="#"><li id="nav-passatempos" class="nav-side" onclick=sobre_passatempos()><span class="sidebar">PASSATEMPOS</span></li></a>
+            </ul>
+        </div>
+        <div class="art-main">
+            <div id = "apresentacao">
+                <p>Olá e boas vindas a esta página! </p>
+                <p>O meu nome é Luís Vieira e sou <b>Engenheiro Mecânico</b>.</p>
+                <p>Este website foi criado por mim com conhecimentos básicos de HTML, CSS e Javascript. Não serve para os demonstrar, 
+                mas sim dar a conhecer um pouco de mim a nível pessoal e profissional, algo que num formato tradicional 
+                de currículo tem as suas limitações. Serviu, naturalmente, como um exercício de aprendizagem de uma área que 
+                tinha alguma curiosidade.</p>
+                <p class="article-quote">Gosto de me manter ativo e tenho uma grande urgência em aprender constantemente,</p> 
+                <p> que se reflete numa grande variedade de skills que desenvolvi e que pretendo continuar a melhorar. Dentro das minhas qualidades, 
+                destaco uma grande afinidade com informática e a criatividade na resolução de problemas.</p>
+                <p class = "article-quote">Tenho computador desde os meus 3 anos, o que promoveu a minha afinidade com a informática e com o inglês. </p>
+                <p>Habituei-me desde muito cedo a instalar programas, aprender a usá-los; estragar computadores e aprender a arranjá-los. Hoje em dia uso 
+                Linux, que acaba por ser mais desafiante mas também recompensador na utilização mais eficiente e personalizada.</p>
+            </div>
+
+            <div id="percurso">
+                <p>Nasci e cresci no distrito do Porto, tendo mudado para Aveiro para frequentar o Mestrado Integrado em Engenharia 
+                Mecânica. </p>
+                <p>Inicialmente moveu-me o fascínio pelas leis da física e a minha facilidade com a matemática. Após alguns 
+                anos a duvidar do meu interesse pelo curso, encontrei finalmente uma verdadeira paixão na programação com a ajuda 
+                de duas unidades curriculares do 4º ano: Informática Industrial e Visão Assistida por Computador, utilizando os 
+                softwares Visual Basic e Matlab, respetivamente.</p>
+                <p class = "article-quote">Fiz a dissertação de Mestrado na área de projeto eletrónico,</p>
+                <p> uma oportunidade que me permitiu estudar de forma auto-didata teoria de processamento de sinal para aprofundar o que tinha aprendido
+                em Servomecanismos. Deste modo, pude pensar o projeto de hardware com circuitos integrados e outros componentes baratos para executar algo
+                bastante complexo.</p>
+                <p class = "article-quote">Complementei o projeto com software embebido em Arduino que utiliza um híbrido entre C e C++.</p>
+                <p>Terminei o curso em plena pandemia, o que limitou as oportunidades de trabalho. Consegui arranjar um trabalho em Engenharia Mecânica 
+                onde tive a oportunidade de aprender imenso. Aprimorei as minhas capacidades de desenho CAD com Solidworks tendo aplicado
+                os meus conhecimentos à produção industrial. Fiz também gestão de projeto e desenvolvimento de um produto ligado às energias renováveis.</p>
+                <p>Sempre considerei a programação como o meu objetivo principal, por isso, nos tempos livres, comecei a fazer cursos de Python para que 
+                futuramente pudesse redirecionar definitivamente a minha área profissional.</p>
+            </div>
+            
+            <div id="motivacao">
+                <p>O desenvolvimento de software oferece-me liberdade de movimentos na hora de resolver problemas 
+                e de exercer processos criativos. Existe um infinito número de caminhos para chegar a um objetivo, uns mais eficazes 
+                que outros. Mas o facto destes poderem ser implementados, testados e analisados de forma imediata no nosso computador 
+                é um estímulo enorme à minha forma de abordar problemas e discutir soluções.</p>
+                <p class="article-quote">A resposta imediata do software incute uma mentalidade de avaliar analiticamente o nosso raciocínio
+                mesmo que este tenha surgido empiricamente.</p> 
+                <p>Na programação é possível perceber exatamente onde estão as nossas limitações e não aceitar o que está correto 
+                só porque já existe uma lista de regras e fórmulas que temos de seguir. Abordar exercícios complexos e chegar a uma conclusão 
+                funcional é extremamente recompensador a nível pessoal.</p>
+                <p>Em particular, a Visão Assistida por Computador é um ramo científico que me entusiasma muitíssimo, porque é uma aliança 
+                entre duas áreas que adoro: a imagem e a programação. O desenvolvimento de software para Visão permite-me aprofundar 
+                conhecimentos sobre ambos. Devido à extrema complexidade dos problemas que nos são propostos durante o Mestrado, acabei por 
+                ficar fascinado por esta área.</p>
+                <p class="article-quote">A curto prazo tenho como objetivo tornar-me proficiente em Python</p>
+                <p>seja na criação de pequenas funções, scripts e pequenos programas que sejam funcionais a nível prático na indústria. 
+                Pretendo adquirir conhecimentos a nível profissional para que, com mais prática, possa tirar 
+                partido da minha rapidez de execução e da minha criatividade.</p>
+                <p>Eventualmente quero sentir-me confiante de que os meus conceitos de programação são aplicáveis em contexto prático. Quando 
+                for um programador avançado, gostaria de trabalhar em Visão Assistida por Computador ou desenvolvimento de videojogos. 
+                Assim, vejo Python como a linguagem que abre o leque várias áreas que me fascinam.</p>
+                <p>Seria também muito desejável trabalhar em Linux diariamente e continuar a desenvolver competências, 
+                ainda que não necessariamente fora da ótica do utilizador.</p>
+            </div>
+
+            <div id="objetivos"></div>
+
+            <div id="passatempos">
+                <p>Sempre tive uma grande paixão por arte, destacando a fotografia, os videojogos e, acima de tudo, a música.</p>
+                <p>Faço música desde 2008 e gosto de saber sempre mais sobre técnicas e ferramentas vanguardistas. </p>
+                <p class="article-quote">Ter estudado Engenharia Mecânica permitiu-me ter fundamentos sólidos de Engenharia de Som, </p>
+                <p>especialmente durante a dissertação de Mestrado onde estudei e apliquei teoria de processamento de sinal.</p>  
+                <p>Gosto de conhecer investigar obras musicais seja sobre o passado ou sobre o presente. Interesso-me por saber quem inovou 
+                no passado e quem nos ajudou a formar o contexto artístico atual. Por outro lado, quero também acompanhar quem inova no 
+                presente e estar a par de novas tendências e movimentos.</p>
+                <p>Vejo os videojogos numa vertente mais lúdica, uma vez que os acompanho desde a minha infância e são para mim uma fonte de 
+                entertenimento. No entanto, cada vez mais os vejo na ótica da programação.</p>
+            </div>
+
+        </div>
+        <div class="art-2">
+            <div id = "apresentacao-imgs"><img 
+                src="images/apresentacao1.jpg" width="100%"><img 
+                src="images/apresentacao2.jpg" width="100%"><img 
+                src="images/apresentacao3.jpg" width="100%">
+            </div>
+
+            <div id = "percurso-imgs"><img 
+                src="images/percurso2.jpg" width="100%"><img 
+                src="images/percurso3.jpg" width="100%"><img 
+                src="images/percurso4.jpg" width="100%"><img 
+                src="images/percurso5.jpg" width="100%">
+            </div>        
+            
+            <div id = "motivacao-imgs">
+            </div>    
+
+            <div id = "objetivos-imgs">
+            </div>    
+
+            <div id = "passatempos-imgs"><img 
+                src="images/passatempos1.jpg" width="100%"><img 
+                src="images/passatempos4.jpg" width="100%"><img 
+                src="images/passatempos3.jpg" width="100%">
+            </div>    
+            
+        </div>
+
+        <div class="sep3-1"></div>
+        <div class="sep3-main"></div>
+        <div class="sep3-2"></div>
+
+        <div class="footer-1"></div>
+        <div class="footer-main">luismglvieira@outlook.com</div>
+        <div class="footer-2"></div>
+    </div>
+
+
+    
+
+</body>
+
+
+
+</html>
